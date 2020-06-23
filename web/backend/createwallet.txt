@@ -1,0 +1,24 @@
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### BTC ##############
+$defaults::{"scheme":"http","port":8332,"user":"exfinexbtc","host":"39.108.3.231","pass":"AKi7U4nMTuP"}
+
+##### BTC ##############
+$defaults::{"scheme":"http","port":8332,"user":"exfinexbtc","host":"39.108.3.231","pass":"AKi7U4nMTuP"}
+
+##### BTC ##############
+$defaults::{"scheme":"http","port":8332,"user":"exfinexbtc","host":"39.108.3.231","pass":"AKi7U4nMTuP"}

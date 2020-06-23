@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title></title>
+
+		<!-- Fix for iOS Safari zooming bug -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+		<script type="text/javascript" src="charting_library/charting_library.min.js"></script>
+		<script type="text/javascript" src="datafeeds/udf/dist/polyfills.js"></script>
+		<script type="text/javascript" src="datafeeds/udf/dist/bundle.js"></script>
+
+		<script type="text/javascript">
+			function getParameterByName(name) {
+				name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+				var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+					results = regex.exec(location.search);
+				return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+			var stock = getParameterByName("stock");
+        	var money = getParameterByName("money");
+			TradingView.onready(function()
+			{
+				var widget = new TradingView.widget({
+					fullscreen: true,
+					symbol: stock+"/"+money,
+					interval: '1',
+					timezone:getParameterByName("timezone")|| "Asia/Hong_Kong",
+					container_id: "tv_chart_container",
+					//	BEWARE: no trailing slash is expected in feed URL
+					datafeed: new Datafeeds.UDFCompatibleDatafeed(document.location.protocol+"//"+document.location.host),
+					library_path: "charting_library/",
+					locale: "en",
+					overrides: {
+	                    "paneProperties.topMargin": 15,
+	                    "symbolWatermarkProperties.color" : "rgba(0, 0, 0, 0.00)",
+	                    "volumePaneSize": "medium",
+	                    "paneProperties.legendProperties.showLegend": false
+	                },
+	                drawings_access: {
+				        
+				    },
+	                disabled_features: [
+	                	"left_toolbar",
+	                	"timeframes_toolbar",
+	                	"volume_force_overlay",
+	                	"header_symbol_search",
+	                	"header_resolutions",
+	                	"header_chart_type",
+	                	"header_settings",
+	                	"header_indicators",
+	                	"header_compare",
+	                	"header_undo_redo",
+	                	"header_screenshot",
+	                	"header_fullscreen_button",
+	                	"control_bar"
+
+                	],
+					enabled_features: [
+						"support_multicharts"
+
+					],
+	                autosize:true,
+					
+					theme: getParameterByName('theme'),
+				});
+				widget.onChartReady(function() {
+					var reslution =  ["1分", "5分", "15分", "30分", "1小时", "日线", "周线", "1月"];
+					var reslution1 =  ["1", "5", "15", "30", "60", "1D", "1W", "1M"];
+					for(var i = 0; i < reslution.length; i++) {
+						var button = widget.createButton()[0];
+						button.innerHTML=reslution[i];
+						(function(){      
+						    var p = i     
+						    button.onclick = function() {      
+						      widget.activeChart().setResolution(reslution1[p]);
+						    }  
+						  })();
+					};
+				   
+				});
+				
+
+				
+			})
+
+		</script>
+
+	</head>
+
+	<body style="margin: 0px;">
+		<div id="tv_chart_container"></div>
+	</body>
+
+</html>

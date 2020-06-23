@@ -1,0 +1,5 @@
+nohup python -u check_otc_order_30mins.py >> check_otc.log &
+
+nohup python -u robot.py >> robot.log &
+
+

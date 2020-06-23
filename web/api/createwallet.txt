@@ -1,0 +1,27 @@
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
+
+##### USDT ##############
+$defaults::{"scheme":"http","host":"47.91.247.144","port":8332,"user":"usdt","pass":"O2Flou3ho0hi"}
